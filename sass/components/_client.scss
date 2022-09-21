@@ -1,0 +1,43 @@
+
+
+/* Наші переваги */
+
+
+
+
+
+
+/* Client */
+
+
+
+.client--list {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+
+.client--item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.client--icon {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid;
+    border-color: #AFB1B8;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    fill: #AFB1B8;
+    background: rgba(255, 255, 255, 0.1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: $accent-text-color;
+        border-color: $accent-text-color;
+    }
+}
