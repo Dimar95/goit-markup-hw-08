@@ -1,5 +1,8 @@
 .galery {
     padding-top: 0;
+    @media screen and (min-width: $mobile) {
+        display: none;
+    }
 }
 
 .galery--list {

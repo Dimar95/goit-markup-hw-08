@@ -18,17 +18,13 @@ ul {
     @media screen and (min-width: $mobile) {
         width: $mobile;
     } 
-    background-color: aqua;
     @media screen and (min-width: $tablet) {
-        width: $tablet;
-    }
-        @media screen and (min-width: $tablet) {
         width: $tablet;
     }
     @media screen and (min-width: $desctop) {
         width: $desctop;
     }
-    position: relative;
+
 }
 .menu-button {
     display: inline-block;
@@ -54,6 +50,7 @@ ul {
 }
 .page-header {
     text-decoration: none;
+    position: relative;
 
 }
 .menu-container{

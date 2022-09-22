@@ -1,19 +1,16 @@
 .hero--title {
     color: #fff;
-
     font-weight: 900;
-
-
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
     margin-top: 0;
-    margin-bottom: 30px;
-    padding-top: 200px;
+
     @media screen and (min-width: $mobile) {
-            font-size: 26px;
-            line-height: 1.61;
+        font-size: 26px;
+        line-height: 1.61;
+        padding-top: 118px;
         }
+
     @media screen and (min-width: $desctop) {
         font-size: 44px;
         line-height: 1.36;
@@ -22,9 +19,6 @@
 }
 
 .hero--owerlay {
-    margin-left: auto;
-    margin-right: auto;
-
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
@@ -34,21 +28,23 @@
     background-size: cover;
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        @media screen and (min-width: $mobile) {
-                width: $mobile;
-                height: $mobile;
-            }
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+        height: 400px;
+    }
 }
 
 .hero {
+    margin-left: auto;
+    margin-right: auto;
     background-color: #2F303A;
     text-align: center;
         @media screen and (min-width: $mobile) {
                 width: $mobile;
-                height: $mobile;
+                height: 400px;
             }
         
-            @media screen and (min-width: $mobile) {
+            @media screen and (min-width: $tablet) {
                 width: $tablet;
                 height: $mobile;
             }
@@ -64,18 +60,17 @@
     color: #fff;
     font-family: Roboto, sans-serif;
     font-weight: 700;
-
     border-radius: 4px;
     border-color: transparent;
     cursor: pointer;
-
     text-align: center;
-    padding: 10px 32px;
+
     margin-bottom: 200px;
     @media screen and (min-width: $mobile) {
         font-size: 16px;
         line-height: 1.87;
         letter-spacing: 0.06em;
+        padding: 10px 24px;
         }
 
     @media screen and (min-width: $desctop) {
