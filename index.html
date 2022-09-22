@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link rel="stylesheet" href="./css/main.min.css">
     </head>
 <body class="body">
     <header class="page-header--border">
         <div class="container page-header">
+            <a href="./index.html" class="logo">
+                <span><span class="logo-web">Web</span>Studio</span>
+            </a>
+            <button type="button" class="menu-button is-open container" date-menu-button aria-label="Перемикач мобільного меню">
+                <svg width="24" height="16">
+                    <use href="./images/icon.svg#menu" class="menu-button--icon-menu"></use>
+                    <use href="./images/icon.svg#close" class="menu-button--icon-close"></use>
+                </svg>
+            </button>
+            <div class="menu-container is-open" date-menu>
             <nav>
                 <div class="site-nav">
-                    <a href="./index.html" class="logo">
-                        <span><span class="logo-web">Web</span>Studio</span>
-                    </a>
                     <ul class="site-nav--list">
                         <li><a href="./index.html" class="site-nav--link site-nav--link__currentcolor">Студія</a></li>
                         <li><a href="./portfolio.html" class="site-nav--link">Портфоліо</a></li>
@@ -40,11 +47,14 @@
                     </div>
                 </li>
             </ul>
+            </div>
         </div>
+
+
     </header>
     <main>
         <!-- Герой -->
-            <section class="hero">
+            <section class="hero container">
                 <div class="hero--owerlay">
                 <h1 class="hero--title">Ефективні рішення для<br>вашого бізнесу</h1>
                 <button type="button" class="hero--button" data-modal-open>Замовити послугу</button>
@@ -98,19 +108,19 @@
                 <ul class="galery--list">
                     <li >
                         <div class="galery--item">
-                            <img src="./images/box1.jpg" alt="Десктопні додатки" width="370">
+                            <img src="./images/box1.jpg" alt="Десктопні додатки" max-width="370">
                             <p class="galery--title">Десктопні додатки</p>
                         </div>
                     </li>
                         <li>
                         <div class="galery--item">
-                             <img src="./images/box2.jpg" alt="Мобільні додатки" width="370">
+                             <img src="./images/box2.jpg" alt="Мобільні додатки" max-width="370">
                             <p class="galery--title">Мобільні додатки</p>
                         </div>
                     </li>
                     <li>
                         <div class="galery--item">
-                            <img src="./images/box3.jpg" alt="Дизайнерські рішення" width="370">
+                            <img src="./images/box3.jpg" alt="Дизайнерські рішення" max-width="370">
                             <p class="galery--title">Дизайнерські рішення</p>
                         </div>
                     </li>
@@ -427,5 +437,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/mobilmenu.js"></script>
 </body>
 </html>

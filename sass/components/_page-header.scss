@@ -1,3 +1,4 @@
+
 .body {
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
@@ -10,22 +11,61 @@ ul {
 }
 
 .container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+    } 
+    background-color: aqua;
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+    }
+        @media screen and (min-width: $tablet) {
+        width: $tablet;
+    }
+    @media screen and (min-width: $desctop) {
+        width: $desctop;
+    }
+    position: relative;
 }
-.site-nav {
-    display: flex;
-    align-items: center;
+.menu-button {
+    display: inline-block;
+    fill: $primary-text-color;
+    padding: 0;
+    margin-left: auto;
+    background-color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
 }
 
-.site-nav--list {
-    display: flex;
-    margin-left: 93px;
-    margin-top: 0;
-    margin-bottom: 0;
+.menu-button--icon-close {
+    display: none;
+}
+
+.menu-button.is-open .menu-button--icon-menu {
+    display: none;
+}
+
+.menu-button.is-open .menu-button--icon-close {
+    display: block;
+}
+.page-header {
+    text-decoration: none;
+
+}
+.menu-container{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: teal;
+    display: none;
+    &.is-open{
+        display: block;
+    }
 }
 
 .site-nav--link {
@@ -66,11 +106,6 @@ ul {
     }
 }
 
-.page-header {
-    text-decoration: none;
-    align-items: center;
-    display: flex;
-}
 
 .page-header--border {
     border-bottom: 1px solid #ECECEC;
