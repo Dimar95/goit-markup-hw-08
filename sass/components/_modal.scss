@@ -7,11 +7,15 @@
     top: 0;
     opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: $mobile) {
+        padding: 93px 15px;
+        overflow-y: scroll;
+        }
 }
 
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.5);
-}
+// .backdrop.is-hidden .modal {
+//     transform: translate(-50%, -50%) scale(0.5);
+// }
 
 .is-hidden {
     opacity: 0;
@@ -20,17 +24,22 @@
 }
 
 .modal {
-    position: absolute;
-    width: 528px;
-    height: 581px;
+    // position: absolute;
+    // width: 528px;
+    @media screen and (min-width: $mobile) {
+        max-width: $mobile;
+        margin-left: auto;
+        margin-right: auto;
+        }
+    // height: 581px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    top: 50%;
-    left: 50%;
+    // top: 0;
+    // left: 0;
 
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translate(-50%, -50%) scale(1);
+    // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    // transform: translate(-50%, -50%) scale(1);
 
 }
 

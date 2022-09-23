@@ -15,18 +15,19 @@ ul {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    @media screen and (min-width: $mobile) {
-        width: $mobile;
+    width: 480px;
+    @media screen and (min-width: 480px) {
+        width: 480px;
     } 
-    @media screen and (min-width: $tablet) {
-        width: $tablet;
+    @media screen and (min-width: 768px) {
+        width: 768px;
     }
-    @media screen and (min-width: $desctop) {
-        width: $desctop;
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
     }
 
 }
-.menu-button {
+.menu-button{
     display: inline-block;
     fill: $primary-text-color;
     padding: 0;
@@ -35,8 +36,27 @@ ul {
     border: none;
     width: 40px;
     height: 40px;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
-
+.menu-container {
+    display: none;
+    // @media screen and (min-width: 767px) {
+    //     display: none;
+    //     position: absolute;
+    //     top: 100%;
+    //     left: 0;
+    //     width: 100%;
+    // }
+    // background-color: teal;
+    // &.is-open {
+    //     display: block;
+    // }
+    // @media screen and (min-width: 768px) {
+    //     display: flex;
+    // }
+}
 .menu-button--icon-close {
     display: none;
 }
@@ -53,17 +73,7 @@ ul {
     position: relative;
 
 }
-.menu-container{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: teal;
-    display: none;
-    &.is-open{
-        display: block;
-    }
-}
+
 
 .site-nav--link {
     font-weight: 500;
@@ -109,7 +119,7 @@ ul {
 }
 
 .page-header--contact {
-    display: flex;
+    // display: flex;
     margin-left: auto;
 }
 

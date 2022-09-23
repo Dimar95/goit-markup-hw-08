@@ -12,7 +12,6 @@
     @media screen and (min-width: $mobile) {
         display: inline-block;
         margin: 15px;
-    
     }
 }
 // .client--item:not(:last-child) {
@@ -39,6 +38,11 @@
     }
     @media screen and (min-width: $mobile) {
         width: 200px;
+        height: 92px;
+        
+    }
+    @media screen and (min-width: $tablet) {
+        width: 222px;
         height: 92px;
         
     }

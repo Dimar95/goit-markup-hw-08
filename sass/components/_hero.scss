@@ -4,16 +4,13 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-top: 0;
+    padding-top: 118px;
 
-    @media screen and (min-width: $mobile) {
-        font-size: 26px;
-        line-height: 1.61;
-        padding-top: 118px;
-        }
 
-    @media screen and (min-width: $desctop) {
+    @media screen and (min-width: 1200px) {
         font-size: 44px;
         line-height: 1.36;
+        padding-top: 200px;
         }
 
 }
@@ -28,10 +25,8 @@
     background-size: cover;
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    @media screen and (min-width: $mobile) {
-        width: $mobile;
-        height: 400px;
-    }
+    width: 100%;
+        
 }
 
 .hero {
@@ -39,23 +34,21 @@
     margin-right: auto;
     background-color: #2F303A;
     text-align: center;
-        @media screen and (min-width: $mobile) {
-                width: $mobile;
-                height: 400px;
-            }
-        
-            @media screen and (min-width: $tablet) {
-                width: $tablet;
-                height: $mobile;
-            }
-        
-            @media screen and (min-width: $desctop) {
-                width: $desctop;
-                height: $mobile;
-            }
+    @media screen and (min-width: 480px) {
+            width: 480px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            width: 768px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 1200px;
+        }
 }
 
 .hero--button {
+    // display: block;
     background: $accent-text-color;
     color: #fff;
     font-family: Roboto, sans-serif;
@@ -64,18 +57,16 @@
     border-color: transparent;
     cursor: pointer;
     text-align: center;
+    padding: 10px 24px;
+    margin-bottom: 180px;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
 
-    margin-bottom: 200px;
-    @media screen and (min-width: $mobile) {
-        font-size: 16px;
-        line-height: 1.87;
-        letter-spacing: 0.06em;
-        padding: 10px 24px;
-        }
 
-    @media screen and (min-width: $desctop) {
+    @media screen and (min-width: 768px) {
         font-size: 16px;
         line-height: 1.88;
-
+        margin-bottom: 200px;
         }
 }

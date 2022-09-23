@@ -6,9 +6,11 @@
     padding-bottom: 60px;
 }
 
-// .footer--box {
-//     display: flex;
-// }
+.footer--box {
+    @media screen and (min-width: 768px) {
+    display: inline-block;
+    }
+}
 
 .contact-box {
     margin-right: 70px;
@@ -23,11 +25,11 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    @media screen and (min-width: $mobile) {
+
         display: block;
         text-align: center;
         }
-}
+
 
 .footer--contact {
     padding-left: 0;
@@ -83,10 +85,17 @@
 
 
 .subscription {
+    @media screen and (min-width: 768px) {
+    display: block;
+    width: 450px;
+    }
     // display: flex;
     // position: relative;
 }
-
+.subscription-form{
+    display: block;
+    width: 450px;
+}
 .subscription--label {
     font-weight: 700;
     font-size: 14px;
@@ -160,6 +169,7 @@
 
 .subscription--icon {
     fill: #fff;
+    display: inline-block;
     // width: 24px;
     // height: 24px;
     // position: absolute;

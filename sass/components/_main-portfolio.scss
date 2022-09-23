@@ -8,13 +8,21 @@
 }
 
 .filter {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
+    padding: 0;
 }
-
-.filter--items:not(:last-child) {
+.filter--items{
     margin-right: 8px;
     margin-bottom: 50px;
+    
+    @media screen and (min-width: $mobile) {
+        margin-bottom: 15px;
+        display: inline-block;
+    }
+}
+.filter--items:not(:last-child) {
+
 }
 
 .filter--button {
