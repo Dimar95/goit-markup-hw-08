@@ -1,8 +1,7 @@
 .galery {
     padding-top: 0;
-    @media screen and (min-width: 1px) {
-        display: none;
-    }
+    display: none;
+
     @media screen and (min-width: 1200px) {
         display: block;
     }

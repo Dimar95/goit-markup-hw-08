@@ -17,11 +17,9 @@
 
 }
 .team--img{
-    @media screen and (min-width: $mobile) {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    }
 }
 .team--item:not(:last-child) {
     @media screen and (min-width: 1200px) {
@@ -35,11 +33,10 @@
     border-radius: 0px 0px 4px 4px;
     margin-bottom: 30px;
     padding: 0;
-    @media screen and (min-width: $mobile) {
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
-        }
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 450px;
     @media screen and (min-width: $tablet) {
         width:350px;
         display: inline-block;
@@ -55,6 +52,9 @@
     line-height: 1.2;
     margin-bottom: 10px;
     text-align: center;
+    @media screen and (min-width: $tablet) {
+    font-size: 18px;
+    }
 }
 
 .team--text {

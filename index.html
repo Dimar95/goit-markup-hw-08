@@ -10,43 +10,51 @@
 <body class="body">
     <header class="page-header--border">
         <div class="container page-header">
-            <a href="./index.html" class="logo">
-                <span><span class="logo-web">Web</span>Studio</span>
-            </a>
-            <button type="button" class="menu-button is-open container" date-menu-button aria-label="Перемикач мобільного меню">
-                <svg width="24" height="16">
-                    <use href="./images/icon.svg#menu" class="menu-button--icon-menu"></use>
-                    <use href="./images/icon.svg#close" class="menu-button--icon-close"></use>
-                </svg>
-            </button>
-            <div class="menu-container is-open" date-menu>
-            <nav>
-                <div class="site-nav">
-                    <ul class="site-nav--list">
-                        <li><a href="./index.html" class="site-nav--link site-nav--link__currentcolor">Студія</a></li>
-                        <li><a href="./portfolio.html" class="site-nav--link">Портфоліо</a></li>
-                        <li><a href="" class="site-nav--link">Контакти</a></li>
+            <div class="position">
+                <a href="./index.html" class="logo">
+                    <span><span class="logo-web">Web</span>Studio</span>
+                </a>
+                <button type="button" class="menu-button" date-menu-button aria-expanded="false" aria-label="Перемикач мобільного меню">
+                    <svg width="24" height="16" class="menu-button--icon">
+                        <use href="./images/icon.svg#menu" class="icon-menu"></use>
+                        <use href="./images/icon.svg#close" class="icon-close"></use>
+                    </svg>
+                </button>
+                <div class="menu-container" date-menu>
+                    <nav>
+                        <div class="site-nav">
+                            <ul class="site-nav--list">
+                                <li><a href="./index.html" class="site-nav--link site-nav--link__currentcolor">Студія</a></li>
+                                <li><a href="./portfolio.html" class="site-nav--link">Портфоліо</a></li>
+                                <li><a href="" class="site-nav--link">Контакти</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <ul class="page-header--contact">
+                        <li class="page-header--list">
+                            <div class="page-header--item">
+                                <a href="mailto:info@devstudio.com" class="page-header--link page-header--link__position">
+                                    <svg width="16" height="12" class="page-header--icon">
+                                        <use href="./images/icon.svg#envelope"></use>
+                                    </svg>info@devstudio.com</a>
+                            </div>
+                        </li>
+                        <li class="page-header--list">
+                            <div class="page-header--item">
+                                <a href="tel:+380961111111" class="page-header--link page-header--link__mobil-accent">
+                                    <svg width="10" height="16" class="page-header--icon">
+                                        <use href="./images/icon.svg#smartphone"></use>
+                                    </svg>+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                    <ul class="page-header--social">
+                        <li><a href="" class="page-header--sicial-link">Instagram</a></li>
+                        <li><a href="" class="page-header--sicial-link">Twitter</a></li>
+                        <li><a href="" class="page-header--sicial-link">Facebook</a></li>
+                        <li><a href="" class="page-header--sicial-link">LinkedIn</a></li>
                     </ul>
                 </div>
-            </nav>
-            <ul class="page-header--contact">
-                <li class="page-header--list">
-                    <div class="page-header--item">
-                        <a href="mailto:info@devstudio.com" class="page-header--link">
-                            <svg width="16" height="12" class="page-header--icon">
-                                <use href="./images/icon.svg#envelope"></use>
-                            </svg>info@devstudio.com</a>
-                    </div>
-                </li>
-                <li class="page-header--list">
-                    <div class="page-header--item">
-                        <a href="tel:+380961111111" class="page-header--link">
-                            <svg width="10" height="16" class="page-header--icon">
-                                <use href="./images/icon.svg#smartphone"></use>
-                            </svg>+38 096 111 11 11</a>
-                    </div>
-                </li>
-            </ul>
             </div>
         </div>
 
@@ -426,10 +434,11 @@
                 <textarea name="Коментар" rows="5" placeholder="Введіть текст" class="modal-form--textarea" id="coment"></textarea>
 
                 <label for="checkbox" class="checkbox--label">
+
                     <input type="checkbox" id="checkbox" class="checkbox" name="checkbox">
                         Погоджуюся з розсилкою та приймаю <a href="" class="checkbox--link">Умови договору</a>
                     <span class="checkbox--icon">
-                        <svg width="16" height="15" class="checkbox--svg">
+                        <svg width="12" height="11" class="checkbox--svg">
                             <use href="./images/icon.svg#iconcheck"></use>
                         </svg>
                     </span>
