@@ -1,12 +1,13 @@
 .client--list {
-    // display: flex;
-    // justify-content: center;
     padding: 0;
     @media screen and (min-width: $mobile) {
             display: block;
             margin: -15px;
-    
-        }
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+    }
 }
 .client--item{
     @media screen and (min-width: $mobile) {
@@ -14,9 +15,12 @@
         margin: 15px;
     }
 }
-// .client--item:not(:last-child) {
-//     margin-right: 30px;
-// }
+.client--item:not(:last-child) {
+    @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+    }
+
+}
 
 .client--icon {
     display: flex;
@@ -43,7 +47,10 @@
     }
     @media screen and (min-width: $tablet) {
         width: 222px;
-        height: 92px;
         
+    }
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+
     }
 }

@@ -7,13 +7,15 @@
 }
 
 .predominantly--list {
-    // display: flex;
+
     margin: 0;
     padding-left: 0;
     @media screen and (min-width: 768px) {
         margin: -15px;
         border: none;
-
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
     }
 }
 .predominantly--item{
@@ -21,7 +23,9 @@
     @media screen and (min-width: 768px) {
     margin: 15px;
     width: 350px;
-
+    }
+    @media screen and (min-width: 1200px) {
+    width: 270px;
     }
 }
 .predominantly--head {
@@ -43,10 +47,7 @@
 }
 
 .predominantly--box {
-    // height: 120px;
-    // width: 270px;
-    // display: flex;
-    // align-items: center;
+
     @media screen and (min-width: $mobile) {
 
         text-align: center;
@@ -57,6 +58,12 @@
         width: 354px;
         height: 120px;
         display: inline-block;
+    }
+        @media screen and (min-width: 1200px) {
+        height: 120px;
+        width: 270px;
+        display: flex;
+        align-items: center;
     }
     background: #F5F4FA;
     border-radius: 4px;
@@ -73,12 +80,6 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     margin-top: 30px;
-    @media screen and (min-width: $mobile) {
-        text-align: center;
-    }
-    @media screen and (min-width: $tablet) {
-        text-align: start;
-    }
 }
 
 .predominantly--text {

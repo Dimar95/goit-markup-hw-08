@@ -325,8 +325,9 @@
             </section>
     </main>
     <footer class="footer">
-        <div class="container footer--box">
-        <div class="contact-box">
+        <div class="container">
+        <div class="box">
+        <div class="box--address">
         <a href="./index.html" class="footer-logo"><span class="logo-web">Web</span>Studio</a>
         <address>
             <ul class="footer--contact">
@@ -336,8 +337,8 @@
             </ul>
         </address>
         </div>
-        <div class="contact-box">
-            <p class="footer--title">приєднуйтесь</p>
+        <div class="box--social">
+            <span class="footer--title">приєднуйтесь</span>
                         <ul class="social-networks">
                             <li>
                                 <a href="" class="social-networks--link social-networks--link__fill">
@@ -369,18 +370,20 @@
                             </li>
                         </ul>
         </div>
-
         <div class="subscription">
             <form action="" class="subscription-form">
                 <label for="footemail" class="footer--title">Підпишіться на розсилку</label>
+                <div class="subscription--position">
                 <input type="email" name="footemail" id="footemail" placeholder="E-mail" class="subscription--email">
                 <button type="submit" class="subscription--button">
-                    <span class="subscription--text">Підписатись</span> 
-                <svg class="subscription--icon" width="24" height="24">
-                    <use href="./images/icon.svg#send"></use>
-                </svg>
+                    Підписатись
+                    <svg class="subscription--icon" width="24" height="24">
+                        <use href="./images/icon.svg#send"></use>
+                    </svg>
                 </button>
+                </div>
             </form>
+        </div>
         </div>
         </div>
     </footer>
