@@ -19,43 +19,39 @@
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../../images/Header-desktop.jpg);
+        url(../images/Header-desktop.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 100%;
-}
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-        .hero--owerlay{
-            background-image: linear-gradient(to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-                url(../../images/Header-desktop@2x.jpg);
-        }
-        }
-
-
-.hero {
     margin-left: auto;
     margin-right: auto;
-    background-color: #2F303A;
-    text-align: center;
     @media screen and (max-width: 479px) {
         max-width: 480px;
         }
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 480px) and (max-width: 768px) {
         width: 480px;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 768px;
     }
     @media screen and (min-width: 1200px) {
-        min-width: 1200px;
         max-width: 1600px;
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../images/Header-desktop@2x.jpg);
+        }
+}
+.hero {
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        background-color: #2F303A;
     }
 }
 
