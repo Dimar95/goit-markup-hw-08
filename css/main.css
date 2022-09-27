@@ -603,8 +603,8 @@ ul {
 }
 
 .hero--owerlay {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Imgback.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Imgback.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/Header-desktop.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Header-desktop.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -614,6 +614,12 @@ ul {
   width: 100%;
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero--owerlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/Header-desktop@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Header-desktop@2x.jpg);
+  }
+}
 .hero {
   margin-left: auto;
   margin-right: auto;
@@ -968,12 +974,8 @@ ul {
 
 .client--list {
   padding: 0;
-}
-@media screen and (min-width: 480px) {
-  .client--list {
-    display: block;
-    margin: -15px;
-  }
+  display: block;
+  margin: -15px;
 }
 @media screen and (min-width: 1200px) {
   .client--list {
@@ -986,11 +988,9 @@ ul {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .client--item {
-    display: inline-block;
-    margin: 15px;
-  }
+.client--item {
+  display: inline-block;
+  margin: 15px;
 }
 @media screen and (min-width: 1200px) {
   .client--item {

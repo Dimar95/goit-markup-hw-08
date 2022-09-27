@@ -1,19 +1,16 @@
 .client--list {
     padding: 0;
-    @media screen and (min-width: $mobile) {
-            display: block;
-            margin: -15px;
-    }
+        display: block;
+        margin: -15px;
+
     @media screen and (min-width: 1200px) {
         display: flex;
         justify-content: center;
     }
 }
 .client--item{
-    @media screen and (min-width: $mobile) {
-        display: inline-block;
-        margin: 15px;
-    }
+    display: inline-block;
+    margin: 15px;
     @media screen and (min-width: 1200px) {
         margin: 0;
     }
