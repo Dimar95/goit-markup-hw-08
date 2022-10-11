@@ -15,6 +15,9 @@
         pointer-events: none;
         visibility: hidden;
 }
+body.modal-open{
+    overflow: hidden;
+}
 .modal {
     max-width: $mobile;
     margin-left: auto;
@@ -27,6 +30,10 @@
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
+    @media screen and (min-width: 480px) {
+    width: 450px;
+        }
     @media screen and (min-width: 1200px) {
     width: 528px;
     height: 581px;
@@ -115,7 +122,7 @@
 }
 .modal-form--textarea {
     resize: none;
-    width: 93%;
+    width: 100%;
     border: 1px solid;
     border-color: rgba(33, 33, 33, 0.2);
     border-radius: 4px;
