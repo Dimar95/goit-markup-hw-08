@@ -47,10 +47,11 @@ ul {
 }
 .menu-container {
     display: none;
-
+    z-index: 2;
     background-color: #fff;
     &.is-open {
         display: block;
+        overflow-y: scroll;
     }
     @media screen and (max-width: 767px) {
         position: absolute;
