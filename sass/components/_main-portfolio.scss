@@ -50,12 +50,7 @@
 }
 
 .portfolio--list {
-
-
     padding: 0;
-    @media screen and (max-width: 767px) {
-        max-width: 450px;
-        }
     @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -69,6 +64,7 @@
 .portfolio--items {
     margin-bottom: 30px;
     max-width: 450px;
+
     @media screen and (min-width: 480px) {
         width: 450px;
     }
