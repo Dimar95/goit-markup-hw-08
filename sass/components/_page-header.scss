@@ -72,7 +72,7 @@ ul {
     top: 10px;
     right: 15px;
     z-index: 2;
-    fill: $primary-text-color;
+    fill: currentColor;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover, &:focus{
         fill: $accent-text-color;
@@ -196,8 +196,8 @@ ul {
     color: $primary-text-color;
     fill: $primary-text-color;
     text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+
     position: relative;
     &:hover,
     &:focus {
