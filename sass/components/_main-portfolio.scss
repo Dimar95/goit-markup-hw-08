@@ -8,8 +8,6 @@
 }
 
 .filter {
-
-
     padding: 0;
     @media screen and (min-width: 768px) {
         display: flex;
@@ -52,24 +50,32 @@
 }
 
 .portfolio--list {
-    display: flex;
-    flex-wrap: wrap;
+
+
     padding: 0;
+    @media screen and (max-width: 767px) {
+        max-width: 450px;
+        }
+    @media screen and (min-width: 768px) {
+    // display: flex;
+    // flex-wrap: wrap;
+    // padding: 0;
     margin: -15px;
+        }
+
 
 }
 
 .portfolio--items {
     margin-bottom: 30px;
-    @media screen and (max-width: 767px) {
-        width: 100%;
+    @media screen and (max-width: 480px) {
+        width: 450px;
     }
     @media screen and (min-width: 768px) {
         margin: 15px;
-        width: calc((100% - 60px)/2);
-        }
+        width: calc((100% - 60px)/2.2);
+    }
     @media screen and (min-width: 1200px) {
-        margin: 15px;
         width: calc((100% - 60px)/3.1);
     }
     
@@ -92,9 +98,10 @@
 }
 
 .portfolio--img {
-    @media screen and (max-width: 767px) {
-            width: 100%;
-    }
+    // @media screen and (max-width: 767px) {
+    //         width: 100%;
+    // }
+    width: 100%;
     display: block;
     box-shadow: none;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -104,7 +111,6 @@
     @media screen and (max-width: 767px) {
             width: 100%;
     }
-    width: 370px;
     margin: 0;
     padding: 63px 24px;
     font-size: 18px;
@@ -145,4 +151,12 @@
     margin-bottom: 20px;
     margin-top: 0;
     margin-left: 24px;
+    &:first-child {
+        @media screen and (max-width: 768px) {
+
+        }
+        @media screen and (max-width: 1200px) {
+            padding-bottom: 0;
+        }
+    }
 }
