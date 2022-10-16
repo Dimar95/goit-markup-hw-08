@@ -51,6 +51,7 @@ ul {
     &.is-open {
         display: block;
         overflow-y: scroll;
+        z-index: 1;
     }
     @media screen and (max-width: 767px) {
         position: absolute;
